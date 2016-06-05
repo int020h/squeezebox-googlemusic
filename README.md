@@ -1,6 +1,13 @@
 squeezebox-googlemusic
 ======================
 
+Note on int020h fork:
+This work was created for personalized customisation and fixing the login problem. This version of the plugin has been tested to work with:
+* Logitech Media Server Version: 7.9.0 - 1463778102 @ Thu May 26 04:37:19 UTC 2016
+* gmusicapi 7.0.0
+
+End of int020h fork notes
+
 [![Travis CI build status](https://travis-ci.org/hechtus/squeezebox-googlemusic.png?branch=master)](https://travis-ci.org/hechtus/squeezebox-googlemusic)
 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Z2KE8W5HW9F8W)
 
