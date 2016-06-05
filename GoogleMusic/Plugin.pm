@@ -185,11 +185,13 @@ sub toplevel {
 	my @menu;
 
 	if ($prefs->get('all_access_enabled')) {
-		@menu = (
-			{ name => cstring($client, 'PLUGIN_GOOGLEMUSIC_MY_MUSIC'), type => 'link', url => \&my_music },
-			{ name => cstring($client, 'PLUGIN_GOOGLEMUSIC_ALL_ACCESS'), type => 'link', url => \&all_access },
-		);
-		$callback->(\@menu);
+	# if all-access is enabled jump right to all access menu 
+		#@menu = (
+		#	{ name => cstring($client, 'PLUGIN_GOOGLEMUSIC_MY_MUSIC'), type => 'link', url => \&my_music },
+		#	{ name => cstring($client, 'PLUGIN_GOOGLEMUSIC_ALL_ACCESS'), type => 'link', url => \&all_access },
+		#);
+		#$callback->(\@menu);
+		all_access($client, $callback, $args);
 	} else {
 		# go to my_music directly, making it the top level menu
 		my_music($client, $callback, $args);
